@@ -1,0 +1,18 @@
+.DS_Store
+FETCH_HEAD
+node_modules/
+dist/
+.env
+.env.local
+
+# Source material / research archive — not part of the deployed site
+scandwave docs/
+
+# Next.js build output
+site/.next/
+site/out/
+site/next-env.d.ts
+
+# Logs / misc
+*.log
+.vercel/

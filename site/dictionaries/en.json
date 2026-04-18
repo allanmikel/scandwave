@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "title": "ScandWave Energy — A new approach to wave energy",
+    "description": "ScandWave Energy AB is developing a research-based wave energy concept — from simulation to verified prototype. Published in Polish Maritime Research, 2024."
+  },
+  "nav": {
+    "about": "Concept",
+    "research": "Research",
+    "roadmap": "Phase",
+    "partnership": "Partnership",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Pre-commercial · TRL 3→5",
+    "title": "A new approach to",
+    "titleAccent": "wave energy",
+    "lead": "From scientific theory and CFD simulation — to validation in relevant environment.",
+    "scrollHint": "Scroll"
+  },
+  "resistance": {
+    "eyebrow": "Starting point",
+    "heading": "Ocean energy remains largely untapped.",
+    "body": "Europe has over 100 GW of technical wave energy potential. Yet few concepts have crossed from simulation into verified application. Energy is lost in what is never built."
+  },
+  "shift": {
+    "eyebrow": "The insight",
+    "heading": "The challenge is not the ocean.",
+    "headingAccent": "It is how we interact with it.",
+    "body": "A new concept — validated against experimental data through CFD methodology — demonstrates that kinetic energy in marine waves can be converted more efficiently than previously assumed."
+  },
+  "innovation": {
+    "eyebrow": "The concept",
+    "heading": "A system, not a machine.",
+    "body": "ScandWave converts wave motion into usable energy through a mechanical and system-based process, analysed using Computational Fluid Dynamics.",
+    "pillars": [
+      { "label": "01", "title": "Hydrodynamic form", "body": "Geometry optimised against real wave behaviour via CFD simulation." },
+      { "label": "02", "title": "Energy transfer", "body": "Mechanical chain designed for low loss and scalability." },
+      { "label": "03", "title": "Scalable architecture", "body": "Modular system logic from testbed to full pilot." }
+    ]
+  },
+  "foundation": {
+    "eyebrow": "Scientific foundation",
+    "heading": "Published research as the starting point.",
+    "citation": {
+      "authors": "N. Abbas, M. Barbahan, Y. Kabrial, A. Kabrial",
+      "title": "A Novel Approach to Wave Energy Conversion Using CFD Technique",
+      "journal": "Polish Maritime Research",
+      "volume": "Vol. 31, Issue 3",
+      "year": "2024",
+      "access": "Open access"
+    },
+    "points": [
+      "Concept analysed with structured CFD approach",
+      "Validated against experimental data",
+      "Simulation dataset already produced",
+      "Research-published — not a mere idea"
+    ]
+  },
+  "roadmap": {
+    "eyebrow": "Development phase",
+    "heading": "From theory to verified prototype.",
+    "body": "The project is structured in five development stages. Current status: stages 1–2.",
+    "stages": [
+      { "n": "01", "title": "Technical review", "body": "Consolidation and review of existing research, simulations and design assumptions.", "status": "Active" },
+      { "n": "02", "title": "Prototype definition", "body": "Selection of test level, dimensioning and practical scope for prototype or testbed.", "status": "Active" },
+      { "n": "03", "title": "Design & engineering", "body": "Technical specifications, component needs, test logic and buildability assessment.", "status": "Next" },
+      { "n": "04", "title": "Build & test", "body": "Establishment of prototype/test environment and first practical tests.", "status": "Planned" },
+      { "n": "05", "title": "Analysis & continuation", "body": "Evaluation, documented learnings, and decision on pilot or scale-up.", "status": "Planned" }
+    ]
+  },
+  "partnership": {
+    "eyebrow": "Consortium",
+    "heading": "We are forming a focused consortium of partners.",
+    "body": "ScandWave Energy AB initiates and leads the project together with an industrial co-applicant, project and funding support via Adect, and relevant test and research partners in later stages.",
+    "slots": [
+      { "role": "Industrial partner", "status": "Seeking" },
+      { "role": "Project & funding support", "status": "Adect" },
+      { "role": "Test & research partner", "status": "Chalmers · RISE (in dialogue)" }
+    ]
+  },
+  "resources": {
+    "eyebrow": "Research notes",
+    "heading": "For funders and partners.",
+    "items": [
+      { "label": "Research article (PDF)", "description": "A Novel Approach to Wave Energy Conversion Using CFD Technique — Polish Maritime Research, 2024", "href": "/scandwave-research.pdf", "external": false },
+      { "label": "Technical appendix", "description": "ScandWave Testbed — concept development and practical verification", "href": "mailto:sargon@orahim.io?subject=Technical%20appendix%20%E2%80%94%20ScandWave", "external": false },
+      { "label": "DOI · journal", "description": "Polish Maritime Research · Vol. 31, Issue 3", "href": "https://sciendo.com/journal/POMR", "external": true }
+    ]
+  },
+  "closing": {
+    "eyebrow": "Dialogue",
+    "heading": "Initiate dialogue.",
+    "body": "We welcome conversations with industrial partners, public funders and research organisations.",
+    "contact": {
+      "projectLead": "Project lead & partnerships",
+      "projectLeadName": "Sargon Orahim",
+      "projectLeadEmail": "sargon@orahim.io",
+      "ceo": "Chief Executive Officer",
+      "ceoName": "Jakob Kabrial",
+      "ceoPhone": "+46 70 497 15 76"
+    },
+    "cta": "Send an email"
+  },
+  "footer": {
+    "company": "Scand Wave Energy AB",
+    "orgno": "Reg. no 559532-7338",
+    "address": "Ängsvägen 17 · 556 33 Jönköping · Sweden",
+    "sector": "NACE 35120 · Electricity from renewable sources",
+    "legal": "© 2026 Scand Wave Energy AB. All rights reserved.",
+    "lang": "English"
+  },
+  "aria": {
+    "loadingScene": "Loading scene",
+    "toggleLang": "Change language",
+    "skipToContent": "Skip to content"
+  }
+}

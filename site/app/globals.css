@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-abyss: #03070d;
-  --color-deep: #061019;
-  --color-ocean: #0a1a2a;
-  --color-mid: #123049;
-  --color-tide: #1f5673;
-  --color-foam: #8fb3c7;
-  --color-cyan: #5fd4f0;
-  --color-cyan-soft: #8de8f8;
-  --color-cyan-dim: #2a7f94;
-  --color-ivory: #eef3f6;
-  --color-ivory-dim: #c7d1d8;
-  --color-mute: #5a6b77;
+  --color-abyss: #0f2336;
+  --color-deep: #163349;
+  --color-ocean: #1a4160;
+  --color-mid: #235075;
+  --color-tide: #357396;
+  --color-foam: #b9d2e0;
+  --color-cyan: #6cd6ee;
+  --color-cyan-soft: #a5e8f5;
+  --color-cyan-dim: #3a95ad;
+  --color-ivory: #f5f8fa;
+  --color-ivory-dim: #d8e0e6;
+  --color-mute: #8192a0;
 
   --color-background: var(--color-abyss);
   --color-foreground: var(--color-ivory);
 
-  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-sans: var(--font-sans-custom), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-serif-custom), ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-mono-custom), ui-monospace, "SF Mono", Menlo, monospace;
 }
 
 @layer base {
@@ -28,9 +28,14 @@
   }
 
   html, body {
-    background: var(--color-abyss);
+    background:
+      radial-gradient(1200px 700px at 15% -10%, rgba(108, 214, 238, 0.08), transparent 60%),
+      radial-gradient(1000px 600px at 100% 30%, rgba(53, 115, 150, 0.12), transparent 55%),
+      linear-gradient(180deg, #0f2336 0%, #163349 50%, #1a4160 100%);
+    background-attachment: fixed;
     color: var(--color-ivory);
     font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -64,8 +69,8 @@
   .display {
     font-family: var(--font-display);
     font-weight: 300;
-    letter-spacing: -0.025em;
-    line-height: 0.96;
+    letter-spacing: -0.015em;
+    line-height: 1.05;
   }
 
   .mono-label {

@@ -55,14 +55,14 @@ export default function SceneFoundation({ dict }: { dict: Dict }) {
 
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <a
-                  href="/scandwave-research.pdf"
+                  href="https://sciendo.com/article/10.2478/pomr-2024-0041"
                   className="group inline-flex items-center gap-3 border border-ivory/15 px-5 py-3 text-sm transition-colors hover:border-cyan hover:text-cyan"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>PDF</span>
+                  <span>{dict.foundation.readStudy}</span>
                   <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-foam group-hover:text-cyan">
-                    190 kb
+                    sciendo · doi
                   </span>
                   <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden>
                     <path d="M1 10L10 1M10 1H3M10 1v7" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
@@ -73,24 +73,42 @@ export default function SceneFoundation({ dict }: { dict: Dict }) {
           </Reveal>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {[1, 2, 3].map((n, i) => (
-            <Reveal key={n} delay={i * 0.08}>
-              <div className="relative aspect-[4/3] overflow-hidden border border-ivory/8 bg-deep">
-                <Image
-                  src={`/media/fig-${n}.jpg`}
-                  alt={`CFD figure ${n}`}
-                  fill
-                  sizes="(min-width: 768px) 33vw, 100vw"
-                  className="object-cover opacity-70 mix-blend-luminosity transition-opacity duration-700 hover:opacity-90"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-abyss/70 via-transparent to-transparent" />
-                <p className="mono-label absolute bottom-4 left-4 text-foam">
-                  Fig. {n}
-                </p>
-              </div>
-            </Reveal>
-          ))}
+        <div className="mt-28">
+          <Reveal>
+            <h3 className="display text-[clamp(1.5rem,2.6vw,2.25rem)] text-ivory">
+              {dict.foundation.figuresHeading}
+            </h3>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="mt-6 max-w-2xl text-sm leading-relaxed text-ivory-dim/85 md:text-base">
+              {dict.foundation.figuresIntro}
+            </p>
+          </Reveal>
+
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {dict.foundation.figures.map((f, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+                <figure className="flex h-full flex-col border border-ivory/10 bg-ivory/95">
+                  <div className="relative aspect-[4/3] w-full">
+                    <Image
+                      src={`/media/fig-${i + 1}.jpg`}
+                      alt={f.title}
+                      fill
+                      sizes="(min-width: 768px) 33vw, 100vw"
+                      className="object-contain p-2"
+                    />
+                  </div>
+                  <figcaption className="border-t border-ivory/10 bg-deep/80 p-5">
+                    <p className="mono-label text-cyan">{f.n}</p>
+                    <p className="mt-2 text-sm text-ivory md:text-base">{f.title}</p>
+                    <p className="mt-3 text-xs leading-relaxed text-ivory-dim/80 md:text-sm">
+                      {f.caption}
+                    </p>
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </div>
     </section>

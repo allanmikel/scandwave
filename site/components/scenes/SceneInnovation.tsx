@@ -103,6 +103,69 @@ export default function SceneInnovation({ dict }: { dict: Dict }) {
             </motion.div>
           ))}
         </RevealStagger>
+
+        <div className="relative mt-32 overflow-hidden border border-ivory/10 bg-deep/40 backdrop-blur-sm md:mt-44">
+          <div aria-hidden className="absolute inset-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/D81_2336_%2828603718425%29.jpg/1600px-D81_2336_%2828603718425%29.jpg"
+              alt=""
+              className="h-full w-full object-cover opacity-25"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-deep/90 via-deep/70 to-deep/30" />
+          </div>
+
+          <div className="relative grid grid-cols-12 gap-8 p-8 md:p-14">
+            <Reveal className="col-span-12 md:col-span-5">
+              <p className="mono-label text-cyan">{dict.innovation.hybrid.eyebrow}</p>
+              <h3 className="display mt-6 text-[clamp(1.75rem,3.6vw,3rem)] text-ivory">
+                {dict.innovation.hybrid.heading}
+              </h3>
+              <p className="mt-8 max-w-md text-base leading-relaxed text-ivory-dim md:text-lg">
+                {dict.innovation.hybrid.body}
+              </p>
+            </Reveal>
+
+            <RevealStagger className="col-span-12 md:col-span-7">
+              <ul className="divide-y divide-ivory/10 border-y border-ivory/10">
+                {dict.innovation.hybrid.sectors.map((s, i) => (
+                  <motion.li
+                    key={i}
+                    variants={staggerItem}
+                    className="py-6 md:py-8"
+                  >
+                    <div className="flex items-start gap-6">
+                      <span className="mono-label mt-2 w-8 shrink-0 text-foam">0{i + 1}</span>
+                      <div className="flex-1">
+                        <h4 className="text-lg text-ivory md:text-xl">{s.title}</h4>
+                        <p className="mt-2 max-w-xl text-sm leading-relaxed text-ivory-dim/85 md:text-base">
+                          {s.body}
+                        </p>
+                        <div className="mt-4 border-l border-cyan/50 pl-4">
+                          <p className="mono-label text-[10px] text-cyan">ScandWave</p>
+                          <p className="mt-1.5 max-w-xl text-sm leading-relaxed text-ivory-dim/90">
+                            {s.differentiator}
+                          </p>
+                        </div>
+                        <a
+                          href={s.link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group mt-4 inline-flex items-center gap-2 text-xs text-cyan transition-colors hover:text-cyan-soft md:text-sm"
+                        >
+                          {s.link.label}
+                          <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden className="transition-transform group-hover:translate-x-0.5">
+                            <path d="M1 10L10 1M10 1H3M10 1v7" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </motion.li>
+                ))}
+              </ul>
+            </RevealStagger>
+          </div>
+        </div>
       </div>
     </section>
   );

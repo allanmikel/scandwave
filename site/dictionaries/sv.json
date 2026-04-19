@@ -14,7 +14,7 @@
     "eyebrow": "Pre-commercial · TRL 3→5",
     "title": "En ny ansats till",
     "titleAccent": "vågkraft",
-    "lead": "Från vetenskaplig teori och CFD-simulering — till verifiering i relevant miljö.",
+    "lead": "Från vetenskaplig teori och CFD-simulering — till verifiering i relevant miljö längs Sveriges västkust.",
     "scrollHint": "Scrolla"
   },
   "resistance": {
@@ -28,6 +28,25 @@
     "headingAccent": "Det är hur vi möter det.",
     "body": "Ett nytt koncept — validerat mot experimentdata genom CFD-metodik — visar att rörelseenergin i marina vågor kan omvandlas effektivare än tidigare antaget."
   },
+  "westCoast": {
+    "eyebrow": "Sveriges västkust",
+    "heading": "Där prototypen ska testas.",
+    "body": "Bohusläns kustlinje — från Göteborgsskärgården till Kosterhavet — ger hög vågenergi, etablerade hamnar och nära tillgång till forskningsinfrastruktur. Det är här ScandWaves testbädd är tänkt att verifieras.",
+    "places": [
+      {
+        "name": "Nordkoster · Bohuslän",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Nordkoster_Klapperstensvallar.jpg/1280px-Nordkoster_Klapperstensvallar.jpg"
+      },
+      {
+        "name": "Smögen",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sm%C3%B6gen_0263_%284944818168%29.jpg/1280px-Sm%C3%B6gen_0263_%284944818168%29.jpg"
+      },
+      {
+        "name": "Kosterhavet",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Kosterhavet_national_park.jpg/1280px-Kosterhavet_national_park.jpg"
+      }
+    ]
+  },
   "innovation": {
     "eyebrow": "Konceptet",
     "heading": "Ett system, inte en maskin.",
@@ -36,11 +55,37 @@
       { "label": "01", "title": "Hydrodynamisk form", "body": "Geometri optimerad mot verklig vågkaraktär via CFD-simulering." },
       { "label": "02", "title": "Energiöverföring", "body": "Mekanisk kedja med fokus på lågt förlustmått och skalbarhet." },
       { "label": "03", "title": "Skalbar arkitektur", "body": "Modulär systemlogik från testbädd till full pilot." }
-    ]
+    ],
+    "hybrid": {
+      "eyebrow": "Hybrid förnybar teknologi",
+      "heading": "Ett hybridsystem — inte en isolerad vågkraftsanläggning.",
+      "body": "I linje med pionjärer som Wave Dragon kombinerar ScandWave vågrörelse med kompletterande förnybara källor i samma havsbaserade plattform. Systemet är designat för samverkan med vind och sol, och för att stötta marina näringar längs Sveriges västkust.",
+      "sectors": [
+        {
+          "title": "Hybrid energi",
+          "body": "Vågkraft i kombination med vind och sol på gemensam havsbaserad plattform — lägre balanseringsbehov och jämnare produktion.",
+          "differentiator": "Där Wave Dragons överspolningsprincip kräver stora havgående strukturer, adresserar ScandWave den kustnära transitionszonen där vågorna fortfarande bär ~80 % av sin energi. Vågkraftskomponenten är fixerad mot havsbotten, dimensionerad i mindre steg och fungerar som baslastskomplement till vind och sol på samma plattform.",
+          "link": { "label": "Wave Dragon — referens", "href": "https://www.wavedragon.com" }
+        },
+        {
+          "title": "Marin vattenbruksstöd",
+          "body": "Stabil, lokalt producerad el till hållbart havsbruk, odling och kustbaserad livsmedelsproduktion — enligt FAO:s arbete kring hållbart akvatiskt näringsliv.",
+          "differentiator": "Till skillnad från dieseldrivna eller långväga nätlösningar, som FAO identifierar som flaskhalsar för hållbart akvatiskt näringsliv, levererar ScandWave el direkt vid anläggningen. Vågkraftskomponenten gör det möjligt att driva pumpar, sensorer och kylning även när vind- och solproduktionen är låg.",
+          "link": { "label": "FAO — hållbart akvatiskt näringsliv", "href": "https://openknowledge.fao.org/server/api/core/bitstreams/d71bd591-c0f9-40cb-8faa-4ba1460dfa2d/content" }
+        },
+        {
+          "title": "Marin miljö & biologisk mångfald",
+          "body": "Utformat med hänsyn till kustekosystem och biologisk mångfald, baserat på den senaste kunskapen om vågkraftens marina miljöeffekter.",
+          "differentiator": "ScandWave bygger vidare på kunskapen havet.nu sammanställt kring vågkraftens marina miljöeffekter. Den bottenfixerade designen minimerar ytstörning, undviker rörliga delar i vattenpelaren där djurlivet är mest känsligt, och är dimensionerad för att kunna demonteras utan bestående ingrepp på havsbotten.",
+          "link": { "label": "havet.nu — marina miljöeffekter", "href": "https://www.havet.nu/marina-miljoeffekter-av-vagkraftsverk" }
+        }
+      ]
+    }
   },
   "foundation": {
     "eyebrow": "Vetenskaplig grund",
     "heading": "Publicerad forskning som utgångspunkt.",
+    "readStudy": "Läs studien",
     "citation": {
       "authors": "N. Abbas, M. Barbahan, Y. Kabrial, A. Kabrial",
       "title": "A Novel Approach to Wave Energy Conversion Using CFD Technique",
@@ -54,6 +99,25 @@
       "Validerat mot experimentdata",
       "Simuleringsunderlag redan framtaget",
       "Forskningspublicerat — inte enbart idé"
+    ],
+    "figuresHeading": "Resultat ur studien",
+    "figuresIntro": "Utvalda grafer ur Abbas m.fl. (2024). Simulerat tryck och moment över tid används för att jämföra enhetens respons med och utan hemisfärisk geometri — grunden för den fortsatta prototypdimensioneringen.",
+    "figures": [
+      {
+        "n": "Fig. 1",
+        "title": "Tryck över tid — med och utan hemisfär",
+        "caption": "Tidsserie av medeltryck (p) vid enhetens inlopp. Jämförelse mellan konfiguration med och utan hemisfärisk form visar hur geometrin stabiliserar trycksignalen och höjer effektivt medeltryck."
+      },
+      {
+        "n": "Fig. 2",
+        "title": "Moment vid utlopp, mellanplan och öppet hav (2,4–4,5 s)",
+        "caption": "Moment [N·m] mätt i tre snitt — utlopp, mellanplan och öppet hav. Differensen mellan snitten speglar energiuttaget längs enheten under en vågcykel."
+      },
+      {
+        "n": "Fig. 3",
+        "title": "Moment i kvasistationärt skede (10,4–13,2 s)",
+        "caption": "Samma tre snitt i ett senare, mer inpendlat tidsfönster. Används för att uppskatta stationärt effektuttag och laster för mekanisk dimensionering."
+      }
     ]
   },
   "roadmap": {
@@ -76,15 +140,27 @@
       { "role": "Industriell partner", "status": "Sökes" },
       { "role": "Projekt- & ansökningsstöd", "status": "Adect" },
       { "role": "Test- & kunskapsaktör", "status": "Chalmers · RISE (diskussion)" }
-    ]
+    ],
+    "team": {
+      "eyebrow": "Forskarteam",
+      "heading": "Forskare och grundare bakom ScandWave.",
+      "members": [
+        { "name": "Jakob Kabrial", "role": "VD & Forskare" },
+        { "name": "Admoun Kabrial", "role": "Forskare" },
+        { "name": "Nawar Abbas", "role": "Forskare · studieförfattare" },
+        { "name": "Michel Barbahan", "role": "Forskare · studieförfattare" },
+        { "name": "Yako Kabrial", "role": "Forskare · studieförfattare" },
+        { "name": "Sargon Orahim", "role": "Projektledare" }
+      ]
+    }
   },
   "resources": {
     "eyebrow": "Research notes",
     "heading": "För finansiärer och partners.",
     "items": [
-      { "label": "Forskningsartikel (PDF)", "description": "A Novel Approach to Wave Energy Conversion Using CFD Technique — Polish Maritime Research, 2024", "href": "/scandwave-research.pdf", "external": false },
+      { "label": "Forskningsartikel (studie online)", "description": "A Novel Approach to Wave Energy Conversion Using CFD Technique — Polish Maritime Research, 2024", "href": "https://sciendo.com/article/10.2478/pomr-2024-0041", "external": true },
       { "label": "Teknisk bilaga", "description": "ScandWave Testbed — konceptutveckling och praktisk verifiering", "href": "mailto:sargon@orahim.io?subject=Teknisk%20bilaga%20%E2%80%94%20ScandWave", "external": false },
-      { "label": "DOI · journalplats", "description": "Polish Maritime Research · Vol. 31, Issue 3", "href": "https://sciendo.com/journal/POMR", "external": true }
+      { "label": "DOI · journalplats", "description": "Polish Maritime Research · Vol. 31, Issue 3", "href": "https://doi.org/10.2478/pomr-2024-0041", "external": true }
     ]
   },
   "closing": {

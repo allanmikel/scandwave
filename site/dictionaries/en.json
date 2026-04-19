@@ -14,7 +14,7 @@
     "eyebrow": "Pre-commercial · TRL 3→5",
     "title": "A new approach to",
     "titleAccent": "wave energy",
-    "lead": "From scientific theory and CFD simulation — to validation in relevant environment.",
+    "lead": "From scientific theory and CFD simulation — to validation in a relevant environment along Sweden's west coast.",
     "scrollHint": "Scroll"
   },
   "resistance": {
@@ -28,6 +28,25 @@
     "headingAccent": "It is how we interact with it.",
     "body": "A new concept — validated against experimental data through CFD methodology — demonstrates that kinetic energy in marine waves can be converted more efficiently than previously assumed."
   },
+  "westCoast": {
+    "eyebrow": "Sweden's west coast",
+    "heading": "Where the prototype will be tested.",
+    "body": "The Bohuslän coastline — from the Gothenburg archipelago up to Kosterhavet — offers high wave energy, established ports and close access to research infrastructure. This is where ScandWave's testbed is planned to be verified.",
+    "places": [
+      {
+        "name": "Nordkoster · Bohuslän",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Nordkoster_Klapperstensvallar.jpg/1280px-Nordkoster_Klapperstensvallar.jpg"
+      },
+      {
+        "name": "Smögen",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sm%C3%B6gen_0263_%284944818168%29.jpg/1280px-Sm%C3%B6gen_0263_%284944818168%29.jpg"
+      },
+      {
+        "name": "Kosterhavet",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Kosterhavet_national_park.jpg/1280px-Kosterhavet_national_park.jpg"
+      }
+    ]
+  },
   "innovation": {
     "eyebrow": "The concept",
     "heading": "A system, not a machine.",
@@ -36,11 +55,37 @@
       { "label": "01", "title": "Hydrodynamic form", "body": "Geometry optimised against real wave behaviour via CFD simulation." },
       { "label": "02", "title": "Energy transfer", "body": "Mechanical chain designed for low loss and scalability." },
       { "label": "03", "title": "Scalable architecture", "body": "Modular system logic from testbed to full pilot." }
-    ]
+    ],
+    "hybrid": {
+      "eyebrow": "Hybrid renewable technology",
+      "heading": "A hybrid system — not a stand-alone wave device.",
+      "body": "Building on pioneers like Wave Dragon, ScandWave combines wave motion with complementary renewables on a single offshore platform. The system is designed to co-operate with wind and solar, and to support marine industries along Sweden's west coast.",
+      "sectors": [
+        {
+          "title": "Hybrid energy",
+          "body": "Wave energy combined with wind and solar on a shared offshore platform — lower balancing needs and more stable output.",
+          "differentiator": "Where Wave Dragon's overtopping principle demands large offshore structures, ScandWave targets the near-shore transition zone, where waves still carry ~80 % of their energy. The wave component is seabed-fixed, scales in smaller increments, and acts as a base-load complement to wind and solar on the same platform.",
+          "link": { "label": "Wave Dragon — reference", "href": "https://www.wavedragon.com" }
+        },
+        {
+          "title": "Marine aquaculture support",
+          "body": "Stable, locally generated electricity for sustainable aquaculture, marine farming and coastal food production — aligned with FAO's work on sustainable aquatic food systems.",
+          "differentiator": "Unlike diesel gensets or long grid runs — identified by the FAO as a bottleneck for sustainable aquatic food systems — ScandWave delivers electricity on-site. The wave component keeps pumps, sensors and cooling running even when wind and solar output are low.",
+          "link": { "label": "FAO — sustainable aquatic foods", "href": "https://openknowledge.fao.org/server/api/core/bitstreams/d71bd591-c0f9-40cb-8faa-4ba1460dfa2d/content" }
+        },
+        {
+          "title": "Marine environment & biodiversity",
+          "body": "Designed with respect to coastal ecosystems and biodiversity, informed by current evidence on the marine environmental effects of wave power.",
+          "differentiator": "ScandWave builds on the knowledge base assembled by havet.nu on the marine effects of wave power. Its seabed-fixed design minimises surface disturbance, avoids moving parts in the water column where marine life is most sensitive, and can be removed without lasting seabed impact.",
+          "link": { "label": "havet.nu — environmental effects", "href": "https://www.havet.nu/marina-miljoeffekter-av-vagkraftsverk" }
+        }
+      ]
+    }
   },
   "foundation": {
     "eyebrow": "Scientific foundation",
     "heading": "Published research as the starting point.",
+    "readStudy": "Read the study",
     "citation": {
       "authors": "N. Abbas, M. Barbahan, Y. Kabrial, A. Kabrial",
       "title": "A Novel Approach to Wave Energy Conversion Using CFD Technique",
@@ -54,6 +99,25 @@
       "Validated against experimental data",
       "Simulation dataset already produced",
       "Research-published — not a mere idea"
+    ],
+    "figuresHeading": "Selected results from the study",
+    "figuresIntro": "Selected graphs from Abbas et al. (2024). Simulated pressure and moment over time are used to compare the device response with and without a hemispherical geometry — the basis for the continuing prototype sizing work.",
+    "figures": [
+      {
+        "n": "Fig. 1",
+        "title": "Pressure over time — with and without hemisphere",
+        "caption": "Time series of averaged pressure (p) at the device inlet. Comparing configurations with and without the hemispherical feature shows how the geometry stabilises the pressure signal and raises the effective mean pressure."
+      },
+      {
+        "n": "Fig. 2",
+        "title": "Moment at outlet, middleplane and open sea (2.4–4.5 s)",
+        "caption": "Moment [N·m] measured at three sections — outlet, middleplane and open sea. The difference between sections reflects energy extraction along the device during a wave cycle."
+      },
+      {
+        "n": "Fig. 3",
+        "title": "Moment in quasi-steady regime (10.4–13.2 s)",
+        "caption": "The same three sections in a later, settled time window. Used to estimate steady-state power take-off and mechanical loads for component sizing."
+      }
     ]
   },
   "roadmap": {
@@ -76,15 +140,27 @@
       { "role": "Industrial partner", "status": "Seeking" },
       { "role": "Project & funding support", "status": "Adect" },
       { "role": "Test & research partner", "status": "Chalmers · RISE (in dialogue)" }
-    ]
+    ],
+    "team": {
+      "eyebrow": "Research team",
+      "heading": "Researchers and founders behind ScandWave.",
+      "members": [
+        { "name": "Jakob Kabrial", "role": "CEO & Researcher" },
+        { "name": "Admoun Kabrial", "role": "Researcher" },
+        { "name": "Nawar Abbas", "role": "Researcher · study author" },
+        { "name": "Michel Barbahan", "role": "Researcher · study author" },
+        { "name": "Yako Kabrial", "role": "Researcher · study author" },
+        { "name": "Sargon Orahim", "role": "Project lead" }
+      ]
+    }
   },
   "resources": {
     "eyebrow": "Research notes",
     "heading": "For funders and partners.",
     "items": [
-      { "label": "Research article (PDF)", "description": "A Novel Approach to Wave Energy Conversion Using CFD Technique — Polish Maritime Research, 2024", "href": "/scandwave-research.pdf", "external": false },
+      { "label": "Research article (online)", "description": "A Novel Approach to Wave Energy Conversion Using CFD Technique — Polish Maritime Research, 2024", "href": "https://sciendo.com/article/10.2478/pomr-2024-0041", "external": true },
       { "label": "Technical appendix", "description": "ScandWave Testbed — concept development and practical verification", "href": "mailto:sargon@orahim.io?subject=Technical%20appendix%20%E2%80%94%20ScandWave", "external": false },
-      { "label": "DOI · journal", "description": "Polish Maritime Research · Vol. 31, Issue 3", "href": "https://sciendo.com/journal/POMR", "external": true }
+      { "label": "DOI · journal", "description": "Polish Maritime Research · Vol. 31, Issue 3", "href": "https://doi.org/10.2478/pomr-2024-0041", "external": true }
     ]
   },
   "closing": {

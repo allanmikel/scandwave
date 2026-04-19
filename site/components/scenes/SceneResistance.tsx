@@ -43,6 +43,20 @@ export default function SceneResistance({ dict }: { dict: Dict }) {
                 <Metric figure="~99" unit="%" label="Untapped" accent />
               </div>
             </Reveal>
+
+            <Reveal delay={0.5}>
+              <figure className="mt-16 overflow-hidden border border-ivory/10">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Pelamis_at_EMEC.jpg/1200px-Pelamis_at_EMEC.jpg"
+                  alt="Pelamis wave energy converter under test"
+                  className="h-auto w-full object-cover opacity-85"
+                />
+                <figcaption className="bg-deep/80 px-5 py-3 text-xs text-ivory-dim/80">
+                  Pelamis — ett av få vågkraftskoncept som nått havet. ScandWave adresserar nästa steg: kustnära, skalbar och hybridkopplad.
+                </figcaption>
+              </figure>
+            </Reveal>
           </motion.div>
         </div>
       </div>

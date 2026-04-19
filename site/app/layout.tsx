@@ -1,24 +1,26 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Geist, Geist_Mono } from "next/font/google";
+import { IBM_Plex_Mono, IBM_Plex_Sans, IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
 
-const geist = Geist({
-  variable: "--font-geist",
+const plexSans = IBM_Plex_Sans({
+  variable: "--font-sans-custom",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-mono-custom",
   subsets: ["latin"],
+  weight: ["400", "500"],
   display: "swap",
 });
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const plexSerif = IBM_Plex_Serif({
+  variable: "--font-serif-custom",
   subsets: ["latin"],
+  weight: ["300", "400", "500"],
   display: "swap",
-  axes: ["opsz"],
 });
 
 export const metadata: Metadata = {
@@ -44,7 +46,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#03070d",
+  themeColor: "#0f2336",
   colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
@@ -54,7 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       suppressHydrationWarning
-      className={`${geist.variable} ${geistMono.variable} ${fraunces.variable}`}
+      className={`${plexSans.variable} ${plexMono.variable} ${plexSerif.variable}`}
     >
       <body>{children}</body>
     </html>

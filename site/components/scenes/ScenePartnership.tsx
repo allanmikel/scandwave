@@ -52,6 +52,31 @@ export default function ScenePartnership({ dict }: { dict: Dict }) {
             );
           })}
         </RevealStagger>
+
+        <div className="mt-32">
+          <Reveal>
+            <p className="mono-label text-center">{dict.partnership.team.eyebrow}</p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h3 className="display mx-auto mt-6 max-w-3xl text-center text-[clamp(1.5rem,3vw,2.5rem)] text-ivory">
+              {dict.partnership.team.heading}
+            </h3>
+          </Reveal>
+          <RevealStagger className="mx-auto mt-14 grid max-w-6xl grid-cols-1 gap-px bg-ivory/10 sm:grid-cols-2 lg:grid-cols-3">
+            {dict.partnership.team.members.map((m, i) => (
+              <motion.article
+                key={i}
+                variants={staggerItem}
+                className="group relative bg-deep/60 p-8 backdrop-blur-sm md:p-10"
+              >
+                <span className="mono-label text-cyan">0{i + 1}</span>
+                <h4 className="display mt-6 text-2xl text-ivory md:text-3xl">{m.name}</h4>
+                <p className="mt-3 text-sm text-foam md:text-base">{m.role}</p>
+                <div className="mt-8 h-px w-12 bg-cyan/60 transition-all duration-700 group-hover:w-full" />
+              </motion.article>
+            ))}
+          </RevealStagger>
+        </div>
       </div>
     </section>
   );

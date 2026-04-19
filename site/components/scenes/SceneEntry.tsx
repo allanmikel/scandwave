@@ -6,8 +6,18 @@ import BrandMark from "@/components/ui/BrandMark";
 
 export default function SceneEntry({ dict }: { dict: Dict; locale: Locale }) {
   return (
-    <section className="scene relative flex min-h-[100svh] items-center" id="top">
-      <div className="mx-auto w-full max-w-[1480px] px-6 md:px-10">
+    <section className="scene relative flex min-h-[100svh] items-center overflow-hidden" id="top">
+      <div aria-hidden className="absolute inset-0 z-0">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/D81_2326_%2828497035462%29.jpg/1600px-D81_2326_%2828497035462%29.jpg"
+          alt=""
+          className="h-full w-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-abyss/70 via-abyss/55 to-abyss" />
+        <div className="absolute inset-0 bg-gradient-to-r from-abyss/80 via-transparent to-abyss/70" />
+      </div>
+      <div className="relative mx-auto w-full max-w-[1480px] px-6 md:px-10">
         <div className="relative z-10 grid grid-cols-12 items-end gap-6 pt-32 md:pt-40">
           <div className="col-span-12 lg:col-span-9">
             <motion.p

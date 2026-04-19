@@ -4,6 +4,7 @@ import { getDictionary } from "@/lib/dictionary";
 import SceneEntry from "@/components/scenes/SceneEntry";
 import SceneResistance from "@/components/scenes/SceneResistance";
 import SceneShift from "@/components/scenes/SceneShift";
+import SceneWestCoast from "@/components/scenes/SceneWestCoast";
 import SceneInnovation from "@/components/scenes/SceneInnovation";
 import SceneFoundation from "@/components/scenes/SceneFoundation";
 import SceneRoadmap from "@/components/scenes/SceneRoadmap";
@@ -26,6 +27,7 @@ export default async function Page({ params }: Props) {
       <SceneEntry dict={dict} locale={l} />
       <SceneResistance dict={dict} />
       <SceneShift dict={dict} />
+      <SceneWestCoast dict={dict} />
       <SceneInnovation dict={dict} />
       <SceneFoundation dict={dict} />
       <SceneRoadmap dict={dict} />

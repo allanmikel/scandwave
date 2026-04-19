@@ -7,8 +7,17 @@ import { motion } from "framer-motion";
 export default function SceneClosing({ dict }: { dict: Dict }) {
   const c = dict.closing.contact;
   return (
-    <section id="contact" className="scene relative pt-32 pb-28 md:pt-48 md:pb-40">
-      <div className="mx-auto max-w-[1480px] px-6 md:px-10">
+    <section id="contact" className="scene relative overflow-hidden pt-32 pb-28 md:pt-48 md:pb-40">
+      <div aria-hidden className="absolute inset-0 -z-0">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/D81_2386_%2828603673645%29.jpg/1600px-D81_2386_%2828603673645%29.jpg"
+          alt=""
+          className="h-full w-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-abyss/90 via-abyss/70 to-abyss" />
+      </div>
+      <div className="relative mx-auto max-w-[1480px] px-6 md:px-10">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <p className="mono-label">{dict.closing.eyebrow}</p>

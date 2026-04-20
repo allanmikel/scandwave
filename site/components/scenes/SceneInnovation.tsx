@@ -108,7 +108,7 @@ export default function SceneInnovation({ dict }: { dict: Dict }) {
           <div aria-hidden className="absolute inset-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/D81_2336_%2828603718425%29.jpg/1600px-D81_2336_%2828603718425%29.jpg"
+              src="/media/westcoast/hybrid-backdrop.jpg"
               alt=""
               className="h-full w-full object-cover opacity-25"
             />
@@ -147,17 +147,19 @@ export default function SceneInnovation({ dict }: { dict: Dict }) {
                             {s.differentiator}
                           </p>
                         </div>
-                        <a
-                          href={s.link.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="group mt-4 inline-flex items-center gap-2 text-xs text-cyan transition-colors hover:text-cyan-soft md:text-sm"
-                        >
-                          {s.link.label}
-                          <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden className="transition-transform group-hover:translate-x-0.5">
-                            <path d="M1 10L10 1M10 1H3M10 1v7" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-                          </svg>
-                        </a>
+                        {s.link && (
+                          <a
+                            href={s.link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group mt-4 inline-flex items-center gap-2 text-xs text-cyan transition-colors hover:text-cyan-soft md:text-sm"
+                          >
+                            {s.link.label}
+                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden className="transition-transform group-hover:translate-x-0.5">
+                              <path d="M1 10L10 1M10 1H3M10 1v7" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
+                            </svg>
+                          </a>
+                        )}
                       </div>
                     </div>
                   </motion.li>

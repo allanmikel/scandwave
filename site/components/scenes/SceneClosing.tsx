@@ -11,7 +11,7 @@ export default function SceneClosing({ dict }: { dict: Dict }) {
       <div aria-hidden className="absolute inset-0 -z-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/D81_2386_%2828603673645%29.jpg/1600px-D81_2386_%2828603673645%29.jpg"
+          src="/media/westcoast/closing.jpg"
           alt=""
           className="h-full w-full object-cover opacity-20"
         />
@@ -46,7 +46,8 @@ export default function SceneClosing({ dict }: { dict: Dict }) {
               <ContactCard
                 role={c.ceo}
                 name={c.ceoName}
-                primary={{ label: c.ceoPhone, href: "tel:+46704971576" }}
+                primary={{ label: c.ceoEmail, href: `mailto:${c.ceoEmail}` }}
+                cta={dict.closing.cta}
               />
             </div>
           </Reveal>

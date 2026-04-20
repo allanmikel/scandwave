@@ -15,7 +15,7 @@
     "title": "En ny ansats till",
     "titleAccent": "vågkraft",
     "lead": "Från vetenskaplig teori och CFD-simulering — till verifiering i relevant miljö längs Sveriges västkust.",
-    "scrollHint": "Scrolla"
+    "scrollHint": ""
   },
   "resistance": {
     "eyebrow": "Utgångsläget",
@@ -35,15 +35,15 @@
     "places": [
       {
         "name": "Nordkoster · Bohuslän",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Nordkoster_Klapperstensvallar.jpg/1280px-Nordkoster_Klapperstensvallar.jpg"
+        "src": "/media/westcoast/nordkoster.jpg"
       },
       {
         "name": "Smögen",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sm%C3%B6gen_0263_%284944818168%29.jpg/1280px-Sm%C3%B6gen_0263_%284944818168%29.jpg"
+        "src": "/media/westcoast/smogen.jpg"
       },
       {
         "name": "Kosterhavet",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Kosterhavet_national_park.jpg/1280px-Kosterhavet_national_park.jpg"
+        "src": "/media/westcoast/kosterhavet.jpg"
       }
     ]
   },
@@ -59,13 +59,13 @@
     "hybrid": {
       "eyebrow": "Hybrid förnybar teknologi",
       "heading": "Ett hybridsystem — inte en isolerad vågkraftsanläggning.",
-      "body": "I linje med pionjärer som Wave Dragon kombinerar ScandWave vågrörelse med kompletterande förnybara källor i samma havsbaserade plattform. Systemet är designat för samverkan med vind och sol, och för att stötta marina näringar längs Sveriges västkust.",
+      "body": "ScandWave kombinerar vågrörelse med kompletterande förnybara källor i samma havsbaserade plattform. Systemet är designat för samverkan med vind och sol, och för att stötta marina näringar längs Sveriges västkust.",
       "sectors": [
         {
           "title": "Hybrid energi",
           "body": "Vågkraft i kombination med vind och sol på gemensam havsbaserad plattform — lägre balanseringsbehov och jämnare produktion.",
-          "differentiator": "Där Wave Dragons överspolningsprincip kräver stora havgående strukturer, adresserar ScandWave den kustnära transitionszonen där vågorna fortfarande bär ~80 % av sin energi. Vågkraftskomponenten är fixerad mot havsbotten, dimensionerad i mindre steg och fungerar som baslastskomplement till vind och sol på samma plattform.",
-          "link": { "label": "Wave Dragon — referens", "href": "https://www.wavedragon.com" }
+          "differentiator": "ScandWave adresserar den kustnära transitionszonen där vågorna fortfarande bär ~80 % av sin energi. Vågkraftskomponenten är fixerad mot havsbotten, dimensionerad i mindre steg och fungerar som baslastskomplement till vind och sol på samma plattform.",
+          "link": null
         },
         {
           "title": "Marin vattenbruksstöd",
@@ -159,7 +159,7 @@
     "heading": "För finansiärer och partners.",
     "items": [
       { "label": "Forskningsartikel (studie online)", "description": "A Novel Approach to Wave Energy Conversion Using CFD Technique — Polish Maritime Research, 2024", "href": "https://sciendo.com/article/10.2478/pomr-2024-0041", "external": true },
-      { "label": "Teknisk bilaga", "description": "ScandWave Testbed — konceptutveckling och praktisk verifiering", "href": "mailto:sargon@orahim.io?subject=Teknisk%20bilaga%20%E2%80%94%20ScandWave", "external": false },
+      { "label": "Teknisk bilaga", "description": "ScandWave Testbed — konceptutveckling och praktisk verifiering", "href": "mailto:scandwave@gmail.com?subject=Teknisk%20bilaga%20%E2%80%94%20ScandWave", "external": false },
       { "label": "DOI · journalplats", "description": "Polish Maritime Research · Vol. 31, Issue 3", "href": "https://doi.org/10.2478/pomr-2024-0041", "external": true }
     ]
   },
@@ -170,10 +170,10 @@
     "contact": {
       "projectLead": "Projektledning & partnerskap",
       "projectLeadName": "Sargon Orahim",
-      "projectLeadEmail": "sargon@orahim.io",
+      "projectLeadEmail": "scandwave@gmail.com",
       "ceo": "Verkställande direktör",
       "ceoName": "Jakob Kabrial",
-      "ceoPhone": "+46 70 497 15 76"
+      "ceoEmail": "scandwave@gmail.com"
     },
     "cta": "Skriv ett mail"
   },

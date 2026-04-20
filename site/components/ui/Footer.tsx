@@ -26,18 +26,10 @@ export default function Footer({ dict, locale }: { dict: Dict; locale: Locale })
             <ul className="mt-4 space-y-1.5 text-sm">
               <li>
                 <a
-                  href="mailto:sargon@orahim.io"
+                  href="mailto:scandwave@gmail.com"
                   className="text-ivory-dim transition-colors hover:text-cyan"
                 >
-                  sargon@orahim.io
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:+46704971576"
-                  className="text-ivory-dim transition-colors hover:text-cyan"
-                >
-                  +46 70 497 15 76
+                  scandwave@gmail.com
                 </a>
               </li>
             </ul>

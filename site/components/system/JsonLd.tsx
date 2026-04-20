@@ -21,15 +21,8 @@ export default function JsonLd({ locale, dict }: { locale: Locale; dict: Dict })
     contactPoint: [
       {
         "@type": "ContactPoint",
-        contactType: "partnerships",
-        email: "sargon@orahim.io",
-        name: "Sargon Orahim",
-      },
-      {
-        "@type": "ContactPoint",
-        contactType: "executive",
-        telephone: "+46704971576",
-        name: "Jakob Kabrial",
+        contactType: "general",
+        email: "scandwave@gmail.com",
       },
     ],
   };

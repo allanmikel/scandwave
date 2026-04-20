@@ -34,6 +34,7 @@ export default function SceneWestCoast({ dict }: { dict: Dict }) {
                 <img
                   src={p.src}
                   alt={p.name}
+                  onError={(e) => { e.currentTarget.style.display = "none"; }}
                   className="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
                 />
               </div>

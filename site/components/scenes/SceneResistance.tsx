@@ -48,7 +48,7 @@ export default function SceneResistance({ dict }: { dict: Dict }) {
               <figure className="mt-16 overflow-hidden border border-ivory/10">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Pelamis_at_EMEC.jpg/1200px-Pelamis_at_EMEC.jpg"
+                  src="/media/westcoast/pelamis.jpg"
                   alt="Pelamis wave energy converter under test"
                   className="h-auto w-full object-cover opacity-85"
                 />

@@ -10,7 +10,7 @@ export default function SceneEntry({ dict }: { dict: Dict; locale: Locale }) {
       <div aria-hidden className="absolute inset-0 z-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/D81_2326_%2828497035462%29.jpg/1600px-D81_2326_%2828497035462%29.jpg"
+          src="/media/westcoast/bohuslan.jpg"
           alt=""
           className="h-full w-full object-cover opacity-40"
         />
@@ -74,12 +74,6 @@ export default function SceneEntry({ dict }: { dict: Dict; locale: Locale }) {
         >
           <BrandMark withWordmark={false} className="text-cyan" />
           <div className="hairline flex-1" />
-          <span className="mono-label text-mute flex items-center gap-2">
-            {dict.hero.scrollHint}
-            <svg width="10" height="14" viewBox="0 0 10 14" fill="none" aria-hidden>
-              <path d="M5 1v12M1 9l4 4 4-4" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-            </svg>
-          </span>
         </motion.div>
       </div>
     </section>

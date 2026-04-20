@@ -15,7 +15,7 @@ export default function SceneShift({ dict }: { dict: Dict }) {
       <div aria-hidden className="absolute inset-0 -z-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Bohusl%C3%A4n.JPG/1600px-Bohusl%C3%A4n.JPG"
+          src="/media/westcoast/shift.jpg"
           alt=""
           className="h-full w-full object-cover opacity-20"
         />

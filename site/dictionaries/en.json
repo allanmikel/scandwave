@@ -15,7 +15,7 @@
     "title": "A new approach to",
     "titleAccent": "wave energy",
     "lead": "From scientific theory and CFD simulation — to validation in a relevant environment along Sweden's west coast.",
-    "scrollHint": "Scroll"
+    "scrollHint": ""
   },
   "resistance": {
     "eyebrow": "Starting point",
@@ -35,15 +35,15 @@
     "places": [
       {
         "name": "Nordkoster · Bohuslän",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Nordkoster_Klapperstensvallar.jpg/1280px-Nordkoster_Klapperstensvallar.jpg"
+        "src": "/media/westcoast/nordkoster.jpg"
       },
       {
         "name": "Smögen",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sm%C3%B6gen_0263_%284944818168%29.jpg/1280px-Sm%C3%B6gen_0263_%284944818168%29.jpg"
+        "src": "/media/westcoast/smogen.jpg"
       },
       {
         "name": "Kosterhavet",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Kosterhavet_national_park.jpg/1280px-Kosterhavet_national_park.jpg"
+        "src": "/media/westcoast/kosterhavet.jpg"
       }
     ]
   },
@@ -59,13 +59,13 @@
     "hybrid": {
       "eyebrow": "Hybrid renewable technology",
       "heading": "A hybrid system — not a stand-alone wave device.",
-      "body": "Building on pioneers like Wave Dragon, ScandWave combines wave motion with complementary renewables on a single offshore platform. The system is designed to co-operate with wind and solar, and to support marine industries along Sweden's west coast.",
+      "body": "ScandWave combines wave motion with complementary renewables on a single offshore platform. The system is designed to co-operate with wind and solar, and to support marine industries along Sweden's west coast.",
       "sectors": [
         {
           "title": "Hybrid energy",
           "body": "Wave energy combined with wind and solar on a shared offshore platform — lower balancing needs and more stable output.",
-          "differentiator": "Where Wave Dragon's overtopping principle demands large offshore structures, ScandWave targets the near-shore transition zone, where waves still carry ~80 % of their energy. The wave component is seabed-fixed, scales in smaller increments, and acts as a base-load complement to wind and solar on the same platform.",
-          "link": { "label": "Wave Dragon — reference", "href": "https://www.wavedragon.com" }
+          "differentiator": "ScandWave targets the near-shore transition zone, where waves still carry ~80 % of their energy. The wave component is seabed-fixed, scales in smaller increments, and acts as a base-load complement to wind and solar on the same platform.",
+          "link": null
         },
         {
           "title": "Marine aquaculture support",
@@ -159,7 +159,7 @@
     "heading": "For funders and partners.",
     "items": [
       { "label": "Research article (online)", "description": "A Novel Approach to Wave Energy Conversion Using CFD Technique — Polish Maritime Research, 2024", "href": "https://sciendo.com/article/10.2478/pomr-2024-0041", "external": true },
-      { "label": "Technical appendix", "description": "ScandWave Testbed — concept development and practical verification", "href": "mailto:sargon@orahim.io?subject=Technical%20appendix%20%E2%80%94%20ScandWave", "external": false },
+      { "label": "Technical appendix", "description": "ScandWave Testbed — concept development and practical verification", "href": "mailto:scandwave@gmail.com?subject=Technical%20appendix%20%E2%80%94%20ScandWave", "external": false },
       { "label": "DOI · journal", "description": "Polish Maritime Research · Vol. 31, Issue 3", "href": "https://doi.org/10.2478/pomr-2024-0041", "external": true }
     ]
   },
@@ -170,10 +170,10 @@
     "contact": {
       "projectLead": "Project lead & partnerships",
       "projectLeadName": "Sargon Orahim",
-      "projectLeadEmail": "sargon@orahim.io",
+      "projectLeadEmail": "scandwave@gmail.com",
       "ceo": "Chief Executive Officer",
       "ceoName": "Jakob Kabrial",
-      "ceoPhone": "+46 70 497 15 76"
+      "ceoEmail": "scandwave@gmail.com"
     },
     "cta": "Send an email"
   },

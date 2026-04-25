@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import type { Dict } from "@/lib/i18n";
 import Reveal, { RevealStagger, staggerItem } from "@/components/system/Reveal";
 
@@ -18,20 +18,20 @@ const VIDEOS = [
 export default function SceneInnovation({ dict }: { dict: Dict }) {
   const ref = useRef<HTMLElement>(null);
   const [active, setActive] = useState(0);
-  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  const touchStartX = useRef<number | null>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const panelY = useTransform(scrollYProgress, [0, 1], [40, -40]);
 
-  useEffect(() => {
-    videoRefs.current.forEach((el, i) => {
-      if (!el) return;
-      if (i === active) {
-        el.play().catch(() => {});
-      } else {
-        el.pause();
-      }
-    });
-  }, [active]);
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    touchStartX.current = null;
+    if (Math.abs(dx) < 40) return;
+    setActive((a) => (dx < 0 ? (a + 1) % VIDEOS.length : (a - 1 + VIDEOS.length) % VIDEOS.length));
+  };
 
   return (
     <section ref={ref} id="concept" className="scene relative py-40 md:py-56">
@@ -52,17 +52,20 @@ export default function SceneInnovation({ dict }: { dict: Dict }) {
             className="col-span-12 md:col-span-7"
           >
             <Reveal>
-              <div className="relative aspect-[16/10] overflow-hidden border border-ivory/10 bg-deep">
+              <div
+                className="relative aspect-[16/10] touch-pan-y overflow-hidden border border-ivory/10 bg-deep select-none"
+                onTouchStart={onTouchStart}
+                onTouchEnd={onTouchEnd}
+              >
                 {VIDEOS.map((v, i) => (
                   <video
                     key={v.id}
-                    ref={(el) => { videoRefs.current[i] = el; }}
                     src={v.src}
-                    autoPlay={i === 0}
+                    autoPlay
                     loop
                     muted
                     playsInline
-                    preload={i === 0 ? "metadata" : "none"}
+                    preload="metadata"
                     className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
                       i === active ? "opacity-85" : "opacity-0"
                     }`}

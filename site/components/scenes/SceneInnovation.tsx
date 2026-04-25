@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Dict } from "@/lib/i18n";
 import Reveal, { RevealStagger, staggerItem } from "@/components/system/Reveal";
 
@@ -10,13 +10,28 @@ const VIDEOS = [
   { id: "p", src: "/media/p-field.mp4", label: "Pressure distribution" },
   { id: "v", src: "/media/v-field.mp4", label: "Velocity profile" },
   { id: "tunnel", src: "/media/p-tunnel.mp4", label: "Tunnel section" },
+  { id: "wave-interaction", src: "/media/wave.mp4", label: "Wave interaction · CFD" },
+  { id: "hemisphere", src: "/media/study-2022-04-05.mp4", label: "Hemisphere effect · pressure response" },
+  { id: "moment", src: "/media/study-2022-05-09.mp4", label: "Moment along device · transient regime" },
 ];
 
 export default function SceneInnovation({ dict }: { dict: Dict }) {
   const ref = useRef<HTMLElement>(null);
   const [active, setActive] = useState(0);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const panelY = useTransform(scrollYProgress, [0, 1], [40, -40]);
+
+  useEffect(() => {
+    videoRefs.current.forEach((el, i) => {
+      if (!el) return;
+      if (i === active) {
+        el.play().catch(() => {});
+      } else {
+        el.pause();
+      }
+    });
+  }, [active]);
 
   return (
     <section ref={ref} id="concept" className="scene relative py-40 md:py-56">
@@ -41,12 +56,13 @@ export default function SceneInnovation({ dict }: { dict: Dict }) {
                 {VIDEOS.map((v, i) => (
                   <video
                     key={v.id}
+                    ref={(el) => { videoRefs.current[i] = el; }}
                     src={v.src}
-                    autoPlay
+                    autoPlay={i === 0}
                     loop
                     muted
                     playsInline
-                    preload="metadata"
+                    preload={i === 0 ? "metadata" : "none"}
                     className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
                       i === active ? "opacity-85" : "opacity-0"
                     }`}
@@ -61,11 +77,11 @@ export default function SceneInnovation({ dict }: { dict: Dict }) {
                       "linear-gradient(to top, rgba(3,7,13,0.55), rgba(3,7,13,0) 40%, rgba(3,7,13,0) 60%, rgba(3,7,13,0.35))",
                   }}
                 />
-                <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-4 px-5 py-4">
+                <div className="absolute inset-x-0 bottom-0 flex flex-col items-start gap-3 px-5 py-4 md:flex-row md:items-center md:justify-between md:gap-4">
                   <span className="mono-label text-cyan">
                     {VIDEOS[active].label}
                   </span>
-                  <div className="flex gap-1.5">
+                  <div className="flex flex-wrap gap-1.5">
                     {VIDEOS.map((v, i) => (
                       <button
                         key={v.id}

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Dict } from "@/lib/i18n";
 import Reveal, { RevealStagger, staggerItem } from "@/components/system/Reveal";
 
@@ -19,8 +19,20 @@ export default function SceneInnovation({ dict }: { dict: Dict }) {
   const ref = useRef<HTMLElement>(null);
   const [active, setActive] = useState(0);
   const touchStartX = useRef<number | null>(null);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const panelY = useTransform(scrollYProgress, [0, 1], [40, -40]);
+
+  useEffect(() => {
+    videoRefs.current.forEach((el, i) => {
+      if (!el) return;
+      if (i === active) {
+        el.play().catch(() => {});
+      } else {
+        el.pause();
+      }
+    });
+  }, [active]);
 
   const onTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
@@ -60,6 +72,7 @@ export default function SceneInnovation({ dict }: { dict: Dict }) {
                 {VIDEOS.map((v, i) => (
                   <video
                     key={v.id}
+                    ref={(el) => { videoRefs.current[i] = el; }}
                     src={v.src}
                     autoPlay
                     loop

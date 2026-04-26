@@ -6,13 +6,13 @@ import type { Dict } from "@/lib/i18n";
 import Reveal, { RevealStagger, staggerItem } from "@/components/system/Reveal";
 
 const VIDEOS = [
+  { id: "moment", src: "/media/study-2022-05-09.mp4", label: "Moment along device · transient regime" },
   { id: "wave", src: "/media/symmetrywave.mp4", label: "Hydrodynamic field · CFD" },
   { id: "p", src: "/media/p-field.mp4", label: "Pressure distribution" },
   { id: "v", src: "/media/v-field.mp4", label: "Velocity profile" },
   { id: "tunnel", src: "/media/p-tunnel.mp4", label: "Tunnel section" },
   { id: "wave-interaction", src: "/media/wave.mp4", label: "Wave interaction · CFD" },
   { id: "hemisphere", src: "/media/study-2022-04-05.mp4", label: "Hemisphere effect · pressure response" },
-  { id: "moment", src: "/media/study-2022-05-09.mp4", label: "Moment along device · transient regime" },
 ];
 
 export default function SceneInnovation({ dict }: { dict: Dict }) {
@@ -147,10 +147,10 @@ export default function SceneInnovation({ dict }: { dict: Dict }) {
             <div className="absolute inset-0 bg-gradient-to-r from-deep/90 via-deep/70 to-deep/30" />
           </div>
 
-          <div className="relative grid grid-cols-12 gap-8 p-8 md:p-14">
-            <Reveal className="col-span-12 md:col-span-5">
+          <div className="relative grid grid-cols-1 gap-8 p-6 md:grid-cols-12 md:p-14">
+            <Reveal className="min-w-0 md:col-span-5">
               <p className="mono-label text-cyan">{dict.innovation.hybrid.eyebrow}</p>
-              <h3 className="display mt-6 text-[clamp(1.75rem,3.6vw,3rem)] text-ivory">
+              <h3 className="display mt-6 text-[clamp(1.75rem,3.6vw,3rem)] text-ivory hyphens-auto break-words" lang="sv">
                 {dict.innovation.hybrid.heading}
               </h3>
               <p className="mt-8 max-w-md text-base leading-relaxed text-ivory-dim md:text-lg">
@@ -158,7 +158,7 @@ export default function SceneInnovation({ dict }: { dict: Dict }) {
               </p>
             </Reveal>
 
-            <RevealStagger className="col-span-12 md:col-span-7">
+            <RevealStagger className="min-w-0 md:col-span-7">
               <ul className="divide-y divide-ivory/10 border-y border-ivory/10">
                 {dict.innovation.hybrid.sectors.map((s, i) => (
                   <motion.li

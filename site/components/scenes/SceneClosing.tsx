@@ -23,7 +23,13 @@ export default function SceneClosing({ dict }: { dict: Dict }) {
             <p className="mono-label">{dict.closing.eyebrow}</p>
           </Reveal>
 
-          <Reveal delay={0.1}>
+          <Reveal delay={0.08}>
+            <p className="display mt-6 max-w-3xl text-xl italic leading-snug text-cyan-soft md:text-2xl">
+              {dict.closing.tagline}
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.18}>
             <h2 className="display mt-8 text-[clamp(2.5rem,8vw,7rem)] text-ivory">
               {dict.closing.heading}
             </h2>

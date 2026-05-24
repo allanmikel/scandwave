@@ -45,6 +45,9 @@ export default function SceneInnovation({ dict }: { dict: Dict }) {
     setActive((a) => (dx < 0 ? (a + 1) % VIDEOS.length : (a - 1 + VIDEOS.length) % VIDEOS.length));
   };
 
+  const goPrev = () => setActive((a) => (a - 1 + VIDEOS.length) % VIDEOS.length);
+  const goNext = () => setActive((a) => (a + 1) % VIDEOS.length);
+
   return (
     <section ref={ref} id="concept" className="scene relative py-40 md:py-56">
       <div className="mx-auto max-w-[1480px] px-6 md:px-10">
@@ -114,6 +117,27 @@ export default function SceneInnovation({ dict }: { dict: Dict }) {
                   <span className="pulse-dot inline-block h-1.5 w-1.5 rounded-full bg-cyan" />
                   <span className="mono-label text-[10px]">CFD simulation</span>
                 </div>
+
+                <button
+                  type="button"
+                  onClick={goPrev}
+                  aria-label="Previous"
+                  className="group absolute left-2 top-1/2 z-10 -translate-y-1/2 flex h-10 w-10 items-center justify-center border border-ivory/15 bg-deep/60 text-ivory/80 backdrop-blur-sm transition-all hover:border-cyan/60 hover:bg-deep/80 hover:text-cyan md:left-4 md:h-12 md:w-12"
+                >
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden className="transition-transform group-hover:-translate-x-0.5">
+                    <path d="M9 1L3 7l6 6" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  onClick={goNext}
+                  aria-label="Next"
+                  className="group absolute right-2 top-1/2 z-10 -translate-y-1/2 flex h-10 w-10 items-center justify-center border border-ivory/15 bg-deep/60 text-ivory/80 backdrop-blur-sm transition-all hover:border-cyan/60 hover:bg-deep/80 hover:text-cyan md:right-4 md:h-12 md:w-12"
+                >
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden className="transition-transform group-hover:translate-x-0.5">
+                    <path d="M5 1l6 6-6 6" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </button>
               </div>
             </Reveal>
           </motion.div>

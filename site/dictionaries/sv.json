@@ -20,7 +20,7 @@
   "resistance": {
     "eyebrow": "Utgångsläget",
     "heading": "Havets energi är till största del outnyttjad.",
-    "body": "Europa har en teknisk vågkraftspotential på över 100 GW. Ändå har få koncept tagit steget från simulering till verifierad tillämpning. Energi går förlorad i det som aldrig byggs."
+    "body": "Europa har en teknisk vågkraftspotential på över 100 GW. Ändå har få koncept tagit steget från simulering till verifierad tillämpning. Samtidigt växer behovet av planerbar, fossilfri baskraft och av infrastruktur som möter ett alltmer utsatt kustklimat. Energi går förlorad i det som aldrig byggs."
   },
   "shift": {
     "eyebrow": "Insikten",
@@ -52,9 +52,9 @@
     "heading": "Ett system, inte en maskin.",
     "body": "ScandWave omvandlar vågrörelse till användbar energi genom ett mekaniskt och systembaserat förlopp, analyserat med Computational Fluid Dynamics.",
     "pillars": [
-      { "label": "01", "title": "Hydrodynamisk form", "body": "Geometri optimerad mot verklig vågkaraktär via CFD-simulering." },
-      { "label": "02", "title": "Energiöverföring", "body": "Mekanisk kedja med fokus på lågt förlustmått och skalbarhet." },
-      { "label": "03", "title": "Skalbar arkitektur", "body": "Modulär systemlogik från testbädd till full pilot." }
+      { "label": "01", "title": "Hydrodynamisk form", "body": "Geometri optimerad mot verklig vågkaraktär via CFD-simulering — bottenfixerad, dimensionerad för medelstora kustnära vågor." },
+      { "label": "02", "title": "Koncentrerad energiöverföring", "body": "En kanalgeometri koncentrerar vågens kinetiska energi mot en mekanisk kedja dimensionerad för lågt förlustmått och skalbarhet." },
+      { "label": "03", "title": "Skalbar arkitektur", "body": "Modulär systemlogik från testbädd till pilot — och vidare som hybridmodul på samma havsbaserade plattform som vind och sol." }
     ],
     "hybrid": {
       "eyebrow": "Hybrid förnybar teknologi",
@@ -76,7 +76,7 @@
         {
           "title": "Marin miljö & biologisk mångfald",
           "body": "Utformat med hänsyn till kustekosystem och biologisk mångfald, baserat på den senaste kunskapen om vågkraftens marina miljöeffekter.",
-          "differentiator": "ScandWave bygger vidare på kunskapen havet.nu sammanställt kring vågkraftens marina miljöeffekter. Den bottenfixerade designen minimerar ytstörning, undviker rörliga delar i vattenpelaren där djurlivet är mest känsligt, och är dimensionerad för att kunna demonteras utan bestående ingrepp på havsbotten.",
+          "differentiator": "ScandWave bygger vidare på kunskapen havet.nu sammanställt kring vågkraftens marina miljöeffekter. Den bottenfixerade designen minimerar ytstörning, undviker rörliga delar i vattenpelaren där djurlivet är mest känsligt, och är dimensionerad för att kunna demonteras utan bestående ingrepp på havsbotten. Fundamentkonceptet studeras i lågkolhaltig marinbetong med en sekundär funktion som artificiellt rev — så att infrastrukturen kan bidra till biologisk mångfald snarare än att konkurrera med den.",
           "link": { "label": "havet.nu — marina miljöeffekter", "href": "https://www.havet.nu/marina-miljoeffekter-av-vagkraftsverk" }
         }
       ]
@@ -95,9 +95,9 @@
       "access": "Open access"
     },
     "points": [
-      "Koncept analyserat med strukturerad CFD-ansats",
+      "Koncept analyserat med strukturerad CFD-ansats (Ansys)",
       "Validerat mot experimentdata",
-      "Simuleringsunderlag redan framtaget",
+      "Samförfattat av forskare vid Universität Rostock och Politechnika Gdańska",
       "Forskningspublicerat — inte enbart idé"
     ],
     "figuresHeading": "Resultat ur studien",
@@ -123,13 +123,13 @@
   "roadmap": {
     "eyebrow": "Utvecklingsfas",
     "heading": "Från teori till verifierad prototyp.",
-    "body": "Projektet strukturerat i fem utvecklingssteg. Nuläge: steg 1–2.",
+    "body": "Projektet är strukturerat i fem utvecklingssteg, från koncept och simulering mot verifierad prototyp och pilot. Nuläge: steg 1–2.",
     "stages": [
-      { "n": "01", "title": "Teknisk genomlysning", "body": "Sammanställning och granskning av befintligt forskningsunderlag, simuleringar och designantaganden.", "status": "Pågår" },
-      { "n": "02", "title": "Prototypdefinition", "body": "Val av testnivå, dimensionering och praktisk avgränsning för prototyp eller testbädd.", "status": "Pågår" },
-      { "n": "03", "title": "Design & konstruktion", "body": "Tekniska specifikationer, komponentbehov, testlogik och byggbarhetsbedömning.", "status": "Nästa steg" },
-      { "n": "04", "title": "Byggnation & test", "body": "Etablering av prototyp/testmiljö och genomförande av de första praktiska testerna.", "status": "Planerad" },
-      { "n": "05", "title": "Analys & vidareutveckling", "body": "Utvärdering, dokumentation av lärdomar och beslut om pilot eller uppskalning.", "status": "Planerad" }
+      { "n": "01", "title": "Teknisk genomlysning", "body": "Sammanställning och granskning av befintligt forskningsunderlag, simuleringar och designantaganden.", "status": "Pågår · 2024–2025" },
+      { "n": "02", "title": "Prototypdefinition", "body": "Val av testnivå, dimensionering och praktisk avgränsning för prototyp eller testbädd.", "status": "Pågår · 2025" },
+      { "n": "03", "title": "Design & konstruktion", "body": "Tekniska specifikationer, komponentbehov, testlogik och byggbarhetsbedömning.", "status": "Nästa steg · 2026" },
+      { "n": "04", "title": "Byggnation & test", "body": "Etablering av prototyp/testmiljö och genomförande av de första praktiska testerna.", "status": "Planerad · 2026–2028" },
+      { "n": "05", "title": "Analys & vidareutveckling", "body": "Utvärdering, dokumentation av lärdomar och beslut om pilot eller uppskalning mot kommersiell fas.", "status": "Planerad · 2028–2029" }
     ]
   },
   "partnership": {
@@ -145,12 +145,12 @@
       "eyebrow": "Forskarteam",
       "heading": "Forskare och grundare bakom ScandWave.",
       "members": [
-        { "name": "Jakob Kabrial", "role": "VD & Forskare" },
-        { "name": "Admoun Kabrial", "role": "Forskare" },
-        { "name": "Nawar Abbas", "role": "Forskare · studieförfattare" },
-        { "name": "Michel Barbahan", "role": "Forskare · studieförfattare" },
-        { "name": "Yako Kabrial", "role": "Forskare · studieförfattare" },
-        { "name": "Sargon Orahim", "role": "Projektledare" }
+        { "name": "Jakob Kabrial", "role": "VD & Grundare · Maskin- & energiteknik" },
+        { "name": "Admoun Kabrial", "role": "Medgrundare · Maskin- & energiteknik" },
+        { "name": "Nawar Abbas", "role": "Studieförfattare · Universität Rostock · CFD-simulering (Ansys)" },
+        { "name": "Michel Barbahan", "role": "Studieförfattare · Politechnika Gdańska · Marinteknik & fartygsteknik" },
+        { "name": "Yako Kabrial", "role": "Studieförfattare · forskning" },
+        { "name": "Sargon Orahim", "role": "Projektledning & partnerskap" }
       ]
     }
   },
@@ -165,8 +165,9 @@
   },
   "closing": {
     "eyebrow": "Dialog",
+    "tagline": "Framtidens energi bryter inte kusten — den bygger den.",
     "heading": "Initiera dialog.",
-    "body": "Vi välkomnar samtal med industriella partners, offentliga finansiärer och forskningsaktörer.",
+    "body": "Vi välkomnar samtal med industriella partners, offentliga finansiärer och forskningsaktörer inför nästa utvecklingsfas.",
     "contact": {
       "projectLead": "Projektledning & partnerskap",
       "projectLeadName": "Sargon Orahim",

@@ -20,7 +20,7 @@
   "resistance": {
     "eyebrow": "Starting point",
     "heading": "Ocean energy remains largely untapped.",
-    "body": "Europe has over 100 GW of technical wave energy potential. Yet few concepts have crossed from simulation into verified application. Energy is lost in what is never built."
+    "body": "Europe has over 100 GW of technical wave energy potential. Yet few concepts have crossed from simulation into verified application. At the same time, the need is growing for dispatchable, fossil-free baseload and for infrastructure that meets an increasingly exposed coastal climate. Energy is lost in what is never built."
   },
   "shift": {
     "eyebrow": "The insight",
@@ -52,9 +52,9 @@
     "heading": "A system, not a machine.",
     "body": "ScandWave converts wave motion into usable energy through a mechanical and system-based process, analysed using Computational Fluid Dynamics.",
     "pillars": [
-      { "label": "01", "title": "Hydrodynamic form", "body": "Geometry optimised against real wave behaviour via CFD simulation." },
-      { "label": "02", "title": "Energy transfer", "body": "Mechanical chain designed for low loss and scalability." },
-      { "label": "03", "title": "Scalable architecture", "body": "Modular system logic from testbed to full pilot." }
+      { "label": "01", "title": "Hydrodynamic form", "body": "Geometry optimised against real wave behaviour via CFD simulation — seabed-fixed, sized for mid-range near-shore waves." },
+      { "label": "02", "title": "Concentrated energy transfer", "body": "A channel geometry concentrates the wave's kinetic energy into a mechanical chain designed for low loss and scalability." },
+      { "label": "03", "title": "Scalable architecture", "body": "Modular system logic from testbed to pilot — and onward as a hybrid module on the same offshore platform as wind and solar." }
     ],
     "hybrid": {
       "eyebrow": "Hybrid renewable technology",
@@ -76,7 +76,7 @@
         {
           "title": "Marine environment & biodiversity",
           "body": "Designed with respect to coastal ecosystems and biodiversity, informed by current evidence on the marine environmental effects of wave power.",
-          "differentiator": "ScandWave builds on the knowledge base assembled by havet.nu on the marine effects of wave power. Its seabed-fixed design minimises surface disturbance, avoids moving parts in the water column where marine life is most sensitive, and can be removed without lasting seabed impact.",
+          "differentiator": "ScandWave builds on the knowledge base assembled by havet.nu on the marine effects of wave power. Its seabed-fixed design minimises surface disturbance, avoids moving parts in the water column where marine life is most sensitive, and can be removed without lasting seabed impact. The foundation concept is being studied in low-carbon marine concrete with a secondary artificial-reef function — so the infrastructure contributes to biodiversity rather than competing with it.",
           "link": { "label": "havet.nu — environmental effects", "href": "https://www.havet.nu/marina-miljoeffekter-av-vagkraftsverk" }
         }
       ]
@@ -95,9 +95,9 @@
       "access": "Open access"
     },
     "points": [
-      "Concept analysed with structured CFD approach",
+      "Concept analysed with structured CFD approach (Ansys)",
       "Validated against experimental data",
-      "Simulation dataset already produced",
+      "Co-authored by researchers at Universität Rostock and Politechnika Gdańska",
       "Research-published — not a mere idea"
     ],
     "figuresHeading": "Selected results from the study",
@@ -123,13 +123,13 @@
   "roadmap": {
     "eyebrow": "Development phase",
     "heading": "From theory to verified prototype.",
-    "body": "The project is structured in five development stages. Current status: stages 1–2.",
+    "body": "The project is structured in five development stages, from concept and simulation toward verified prototype and pilot. Current status: stages 1–2.",
     "stages": [
-      { "n": "01", "title": "Technical review", "body": "Consolidation and review of existing research, simulations and design assumptions.", "status": "Active" },
-      { "n": "02", "title": "Prototype definition", "body": "Selection of test level, dimensioning and practical scope for prototype or testbed.", "status": "Active" },
-      { "n": "03", "title": "Design & engineering", "body": "Technical specifications, component needs, test logic and buildability assessment.", "status": "Next" },
-      { "n": "04", "title": "Build & test", "body": "Establishment of prototype/test environment and first practical tests.", "status": "Planned" },
-      { "n": "05", "title": "Analysis & continuation", "body": "Evaluation, documented learnings, and decision on pilot or scale-up.", "status": "Planned" }
+      { "n": "01", "title": "Technical review", "body": "Consolidation and review of existing research, simulations and design assumptions.", "status": "Active · 2024–2025" },
+      { "n": "02", "title": "Prototype definition", "body": "Selection of test level, dimensioning and practical scope for prototype or testbed.", "status": "Active · 2025" },
+      { "n": "03", "title": "Design & engineering", "body": "Technical specifications, component needs, test logic and buildability assessment.", "status": "Next · 2026" },
+      { "n": "04", "title": "Build & test", "body": "Establishment of prototype/test environment and first practical tests.", "status": "Planned · 2026–2028" },
+      { "n": "05", "title": "Analysis & continuation", "body": "Evaluation, documented learnings, and decision on pilot or scale-up toward commercial phase.", "status": "Planned · 2028–2029" }
     ]
   },
   "partnership": {
@@ -145,12 +145,12 @@
       "eyebrow": "Research team",
       "heading": "Researchers and founders behind ScandWave.",
       "members": [
-        { "name": "Jakob Kabrial", "role": "CEO & Researcher" },
-        { "name": "Admoun Kabrial", "role": "Researcher" },
-        { "name": "Nawar Abbas", "role": "Researcher · study author" },
-        { "name": "Michel Barbahan", "role": "Researcher · study author" },
-        { "name": "Yako Kabrial", "role": "Researcher · study author" },
-        { "name": "Sargon Orahim", "role": "Project lead" }
+        { "name": "Jakob Kabrial", "role": "CEO & Founder · Mechanical & energy engineering" },
+        { "name": "Admoun Kabrial", "role": "Co-founder · Mechanical & energy engineering" },
+        { "name": "Nawar Abbas", "role": "Study author · Universität Rostock · CFD simulation (Ansys)" },
+        { "name": "Michel Barbahan", "role": "Study author · Politechnika Gdańska · Marine & naval engineering" },
+        { "name": "Yako Kabrial", "role": "Study author · research" },
+        { "name": "Sargon Orahim", "role": "Project lead & partnerships" }
       ]
     }
   },
@@ -165,8 +165,9 @@
   },
   "closing": {
     "eyebrow": "Dialogue",
+    "tagline": "Tomorrow's energy doesn't break the coast — it builds it.",
     "heading": "Initiate dialogue.",
-    "body": "We welcome conversations with industrial partners, public funders and research organisations.",
+    "body": "We welcome conversations with industrial partners, public funders and research organisations ahead of the next development phase.",
     "contact": {
       "projectLead": "Project lead & partnerships",
       "projectLeadName": "Sargon Orahim",
